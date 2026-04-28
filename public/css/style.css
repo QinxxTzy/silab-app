@@ -1,0 +1,18 @@
+/* public/css/style.css */
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    border-bottom: 3px solid #0d6efd;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.badge-baik { background-color: #198754; }
+.badge-rusak { background-color: #dc3545; }
