@@ -1,18 +1,93 @@
-/* public/css/style.css */
+/* ===== BACKGROUND COLORFUL ===== */
 body {
-    background-color: #f4f7f6;
+    background: linear-gradient(135deg, #667eea, #764ba2, #ff758c);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* animasi background */
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* ===== NAVBAR ===== */
 .navbar {
-    border-bottom: 3px solid #0d6efd;
+    background: linear-gradient(90deg, #4facfe, #00f2fe) !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border-radius: 0 0 20px 20px;
 }
 
-.card {
+/* brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* username badge */
+.navbar .text-light {
+    background: rgba(0,0,0,0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* tombol logout */
+.btn-outline-danger {
+    border-color: #ffffff;
+    color: #ff0000;
+}
+
+.btn-outline-danger:hover {
+    background: #ff4d6d;
+    border-color: #ff4d6d;
+    transform: scale(1.05);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    background: rgba(181, 93, 93, 0.95);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease;
+}
+
+/* animasi masuk */
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+/* ===== BONUS COLORFUL ELEMENT ===== */
+
+/* tombol primary */
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.badge-baik { background-color: #198754; }
-.badge-rusak { background-color: #dc3545; }
+.btn-primary:hover {
+    background: linear-gradient(45deg, #5a67d8, #6b46c1);
+}
+
+/* badge */
+.badge {
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+/* table hover */
+.table-hover tbody tr:hover {
+    background: #f0f4ff;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#667eea, #764ba2);
+    border-radius: 10px;
+}
